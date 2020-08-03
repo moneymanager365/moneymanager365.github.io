@@ -400,14 +400,73 @@
         p.center {
             text-align: center;
         }
+
+        #topButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #2b61a2;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #topButton:hover {
+            background-color: #555;
+        }
     </style>
     <link rel="icon" href="../assets/img/icon.png" />
 </head>
 
 <body>
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("topButton");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <span class="preheader">Use this link to reset your password. The link is only valid for 24 hours.</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
         <tr>
+            <td align="center">
+                <br>
+                <div>Translate this page:</div>
+                <div id="google_translate_element"></div>
+                <br>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                    }
+                </script>
+            </td>
+        </tr>
+        <tr id="policyContent">
             <td align="center">
                 <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
                     <!-- <tr>
@@ -701,9 +760,11 @@
 
                                     </td>
                                 </tr>
+
                             </table>
                         </td>
                     </tr>
+
                 </table>
 
 
@@ -737,10 +798,15 @@
                 </table>
             </td>
         </tr>
+
     </table>
     </td>
     </tr>
     </table>
+    <div>
+        <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    </div>
+
 </body>
 
 </html>
