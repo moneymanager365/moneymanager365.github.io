@@ -12,15 +12,19 @@ html {
     width: 100%;
     text-align: center;
 }
-.mytitle table tr{
+
+.mytitle table tr {
     text-align: center;
 }
-.table_image{
+
+.table_image {
     text-align: center;
 }
-.table_logo{
+
+.table_logo {
     width: auto;
 }
+
 .facebook_post {
     width: 100%;
     text-align: center
@@ -54,23 +58,24 @@ a.facebook_button {
 .buttonFacebook {
     width: 150px;
     background-color: #00000000;
-    color: rgb(255, 255, 255);
-    border: 1px solid #ffffff
+    color: rgb(53, 51, 51);
+    border: 1px solid #000000
 }
 
 .buttonFacebook:hover {
-    background-color: #ffffff;
-    color: rgb(41, 41, 41)
+    background-color: #3f3f3f;
+    color: rgb(236, 231, 231)
 }
 
-#image_frame{
+#image_frame {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-#image_container{
+
+#image_container {
     margin-left: auto;
     margin-right: auto;
-  width: 100%;
+    width: 100%;
 }
