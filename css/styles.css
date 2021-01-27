@@ -1918,7 +1918,7 @@ a:hover.back-to-top {
         text-align: left;
     }
     .header .text-container {
-        margin-top: 6.5rem;
+        margin-top: 0rem;
     }
     /* end of header */
     /* Features */
@@ -2055,7 +2055,7 @@ a:hover.back-to-top {
     /* end of general styles */
     /* Header */
     .header .text-container {
-        margin-top: 7.5rem;
+        margin-top: 0rem;
         margin-left: 2.5rem;
     }
     .header .image-container {
