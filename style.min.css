@@ -1,25 +1,28 @@
 html {
-    background: #1ad6fd;
-    /* background: linear-gradient(0deg, #1d64f0, #1ad2fd); */
+    background: #60bbd2;
+    background: -webkit-linear-gradient(-135deg, #0f96c7, #4158d0);
+    background: -o-linear-gradient(-135deg, #1db9ce, #4158d0);
+    background: -moz-linear-gradient(-135deg, #6cd3ec, #4158d0);
+    background: linear-gradient(-135deg, #40ddd0, #4158d0);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    height: auto;
+    height: auto
 }
 
 .mytitle {
     width: 100%;
-    text-align: center;
+    text-align: center
 }
 
 .mytitle table tr {
-    text-align: center;
+    text-align: center
 }
 
 .table_image {
-    text-align: center;
+    text-align: center
 }
 
 .table_logo {
-    width: auto;
+    width: auto
 }
 
 .facebook_post {
@@ -55,24 +58,24 @@ a.facebook_button {
 .buttonFacebook {
     width: 150px;
     background-color: #00000000;
-    color: rgb(53, 51, 51);
-    border: 1px solid #000000
+    color: #343333;
+    border: 1px solid #333234
 }
 
 .buttonFacebook:hover {
-    background-color: #3f3f3f;
-    color: rgb(236, 231, 231)
+    background-color: #fff;
+    color: #292929
 }
 
 #image_frame {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 50%
 }
 
 #image_container {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 100%
 }
