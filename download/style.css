@@ -1,9 +1,6 @@
 html {
     background: #60bbd2;
-    background: -webkit-linear-gradient(-135deg, #0f96c7, #4158d0);
-    background: -o-linear-gradient(-135deg, #1db9ce, #4158d0);
-    background: -moz-linear-gradient(-135deg, #6cd3ec, #4158d0);
-    background: linear-gradient(-135deg, #40ddd0, #4158d0);
+    background: linear-gradient(0deg, #1d64f0, #1ad2fd);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: auto;
 }
