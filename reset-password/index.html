@@ -1,1 +1,88 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Money Manager 365</title><meta name="viewport" content="width=device-width,initial-scale=1"><!-- SOE Main Page --><meta name="keywords" content="money manager,365,expense,spend,budget,wallet,track,finance,tracker,Money Manager 365"><meta name="Description" content="Money Manager 365 - the financial planning, review, expense, track, budget, tracker, and personal asset management app for Android and iOS"><!-- Page --><link rel="canonical" href="http://www.moneymanager365.com/"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Money Manager 365"><meta property="og:description" content="Money Manager 365 - the financial planning, review, expense, track, budget, tracker, and personal asset management app for Android and iOS"><meta property="og:url" content="http://www.moneymanager365.com/"><meta property="article:section" content="Money Manager helps you track your financial activity efficiently. Its simple design makes it lightweight, straightforward and very easy to use. It’s done in one click, because you don’t need to fill anything except the amount"><meta property="article:published_time" content="2018-04-21T03:31:26.000+08:00"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/1.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/2.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/3.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/4.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/5.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/6.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/7.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/8.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/9.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/10.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/11.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/12.png"><link rel="icon" href="../assets/img/icon.png"></head><body><style>html{background-color:#f2f2f7;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.mytitle{width:100%;text-align:center}.facebook_post{width:100%;text-align:center}a.facebook_button{text-decoration:none}.my-share-buttons{text-align:center;max-height:100px;height:40px}.my-button{background-color:#4caf50;border:none;color:#fff;padding:10px 20px;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;-webkit-transition-duration:.4s;transition-duration:.4s;cursor:pointer;border-radius:5px}.buttonFacebook{width:150px;background-color:#00000000;color:#000;border:1px solid #008cba}.buttonFacebook:hover{background-color:#0ba3d6;color:#fff}input,select{text-align:center;width:200px;padding:12px 20px;margin:8px 0;display:inline-block;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-bottom:30px}input[type=submit]:hover{background-color:#45a049}.myForm{width:200px;text-align:center}.container{width:100%;text-align:center}.loader{border:16px solid #f3f3f3;border-radius:50%;border-top:16px solid #6fe5fa;border-bottom:16px solid #6fe5fa;width:30px;height:30px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><div class="container"><p></p><h1 class="mytitle">Money Manager 365<br></h1><p></p><br><div><label for="fname">Password</label><br><input type="password" class="" id="buttonPassword" name="firstname" autofocus></div><div><label for="lname">Password Confirm</label><br><input type="password" id="buttonPasswordConfirm" name="lastname"></div><div class="my-share-buttons"><label id="lblErrorMessage"></label><div id="loadingActivity" class="loader"></div><br><br><br><button onclick="submit()" class="buttonFacebook my-button">Reset</button></div></div></body></html><script>function hideLoadingActivity(){document.getElementById("loadingActivity").hidden=!0}function submit(){var e=document.getElementById("lblErrorMessage"),n=document.getElementById("buttonPassword"),t=document.getElementById("buttonPasswordConfirm"),r=document.getElementById("loadingActivity"),i=getUrlParams(),a=n.value,o=t.value;if(""==a)return void(e.innerHTML="The Password can't be empty!");if(""==o)return void(e.innerHTML="The Password Confirm can't be empty!");if(a!=o)return void(e.innerHTML="The Password and Password Confirm must be the same!");var d={changePasswordToken:i.changePasswordToken,password:a};e.innerHTML="",e.hidden=!0,r.hidden=!1;const s=new XMLHttpRequest;s.onreadystatechange=function(){if(e.hidden=!1,r.hidden=!0,4==s.readyState&&200==s.status){let n=s.responseText;if("0"==n)return void(e.innerHTML="Connection failed, please try later!");if("-1"==n)return void(e.innerHTML="The Password Reset Link already expired!");if("-2"==n)return void(e.innerHTML="The user account not found!");if("1"==n)return void(e.innerHTML="Successfully changed the password!")}else if(4==s.readyState&&200!=s.status)return void(e.innerHTML="Connection failed, please try later!")},s.open("POST","https://api.moneymanager365.com:6868/reset-password",!0),s.setRequestHeader("Content-Type","application/json"),s.setRequestHeader("api_key","9B2aTYYC7tvy1ED65AXK5YMPtCd2eo4l"),s.send(JSON.stringify(d))}function getUrlParams(){var e={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(n,t,r){e[t]=r});return e}hideLoadingActivity();</script>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Money Manager 365</title><meta name="viewport" content="width=device-width,initial-scale=1"><!-- SOE Main Page --><meta name="keywords" content="money manager,365,expense,spend,budget,wallet,track,finance,tracker,Money Manager 365"><meta name="Description" content="Money Manager 365 - the financial planning, review, expense, track, budget, tracker, and personal asset management app for Android and iOS"><!-- Page --><link rel="canonical" href="http://www.moneymanager365.com/"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Money Manager 365"><meta property="og:description" content="Money Manager 365 - the financial planning, review, expense, track, budget, tracker, and personal asset management app for Android and iOS"><meta property="og:url" content="http://www.moneymanager365.com/"><meta property="article:section" content="Money Manager helps you track your financial activity efficiently. Its simple design makes it lightweight, straightforward and very easy to use. It’s done in one click, because you don’t need to fill anything except the amount"><meta property="article:published_time" content="2018-04-21T03:31:26.000+08:00"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/1.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/2.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/3.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/4.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/5.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/6.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/7.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/8.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/9.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/10.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/11.png"><meta property="og:image" content="https://www.moneymanager365.com/assets/img/12.png"><link rel="icon" href="../assets/img/icon.png"><script>function getUrlVars(){var e={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(n,o,a){e[o]=a});return e}window.onload=function(){var n=getUrlVars().changePasswordToken;window.location="moneymanager365://com.moneymanager365.app?changePasswordToken="+n}</script></head><body><style>html{background-color:#1ad6fd;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.mytitle{width:100%;text-align:center}.facebook_post{width:100%;text-align:center}a.facebook_button{text-decoration:none}.my-share-buttons{text-align:center;max-height:100px;height:40px}.my-share-buttons-title{text-align:center;max-height:100px;height:40px;margin-left:15px;margin-right:15px}.my-button{background-color:#4caf50;border:none;color:#fff;padding:10px 20px;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;-webkit-transition-duration:.4s;transition-duration:.4s;cursor:pointer;border-radius:5px}.buttonFacebook{width:150px;background-color:#00000000;color:#000;border:1px solid #008cba}.buttonFacebook:hover{background-color:#0ba3d6;color:#fff}</style><div class="container"><p></p><a href="https://www.moneymanager365.com/" target="_blank"><h1 class="mytitle">Money Manager 365</h1></a><p></p><br><br><div class="my-share-buttons-title">Please open the password reset link from your mobile phone, and make sure you already installed the App:</div><br><br><div class="my-share-buttons"><a target="_blank" href="https://play.google.com/store/apps/details?id=money.manager.expense.spend.budget.wallet.track.finance.tracker.moneymanager365" class="buttonFacebook my-button">Play Store</a></div><br><br><div class="my-share-buttons"><a target="_blank" href="https://itunes.apple.com/app/id1500848233?mt=8" class="buttonFacebook my-button">iOS</a></div></div></body></html><script>//hideLoadingActivity();
+
+    function hideLoadingActivity() {
+        var loadingActivity = document.getElementById("loadingActivity");
+        loadingActivity.hidden = true;
+    }
+
+    function submit() {
+        var lblErrorMessage = document.getElementById("lblErrorMessage");
+        var buttonPassword = document.getElementById("buttonPassword");
+        var buttonPasswordConfirm = document.getElementById("buttonPasswordConfirm");
+        var loadingActivity = document.getElementById("loadingActivity");
+        var urlParams = getUrlParams();
+
+        var password = buttonPassword.value;
+        var passwordConfirm = buttonPasswordConfirm.value;
+
+        if (password == "") {
+            lblErrorMessage.innerHTML = "The Password can't be empty!";
+            return;
+        }
+
+        // ============= Validation =======================
+        if (passwordConfirm == "") {
+            lblErrorMessage.innerHTML = "The Password Confirm can't be empty!";
+            return;
+        }
+
+        if (password != passwordConfirm) {
+            lblErrorMessage.innerHTML = "The Password and Password Confirm must be the same!";
+            return;
+        }
+
+        var jsonData = {
+            'changePasswordToken': urlParams["changePasswordToken"],
+            'password': password
+        };
+        // =================================================
+
+
+        lblErrorMessage.innerHTML = "";
+        lblErrorMessage.hidden = true;
+        loadingActivity.hidden = false;
+
+
+        const xmlHttp = new XMLHttpRequest();
+        const url = "http://api.moneymanager365.com:6868/reset-password";
+        //const url = "http://127.0.0.1:6868/reset-password";
+
+        
+        xmlHttp.onreadystatechange = function () {
+
+            lblErrorMessage.hidden = false;
+            loadingActivity.hidden = true;
+
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                let result = xmlHttp.responseText;
+                if(result == "0"){
+                    lblErrorMessage.innerHTML = "Connection failed, please try later!";
+                    return;
+                }else if(result == "-1"){
+                    lblErrorMessage.innerHTML = "The Password Reset Link already expired!";
+                    return;
+                }else if(result == "-2"){
+                    lblErrorMessage.innerHTML = "The user account not found!";
+                    return;
+                }else if(result == "1"){
+                    lblErrorMessage.innerHTML = "Successfully changed the password!";
+                    return;
+                }
+            } else if (xmlHttp.readyState == 4 && xmlHttp.status != 200) {
+                lblErrorMessage.innerHTML = "Connection failed, please try later!";
+                return;
+            } 
+        };
+        xmlHttp.open("POST", url, true);
+        xmlHttp.setRequestHeader("Content-Type","application/json");
+        xmlHttp.setRequestHeader("api_key","9B2aTYYC7tvy1ED65AXK5YMPtCd2eo4l");
+        xmlHttp.send(JSON.stringify(jsonData));
+    }
+
+    function getUrlParams() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }</script>
