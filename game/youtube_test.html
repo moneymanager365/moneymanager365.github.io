@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <!-- src="https://www.youtube.com/embed/k0oMtTwhFZs?autoplay=1&mute=1"> -->
+    <iframe width="560" height="315"
+        
+        src="https://www.youtube.com/embed/k0oMtTwhFZs?autoplay=1&mute=1">
+        
+    </iframe>
+
+
+</body>
+</html>
+
+
+<script>
+
+    var n = 1;
+    setInterval(() => {
+        console.log("Time=" + n);
+        if(n >= 180){
+            location.reload();
+        }
+        n += 1;
+    }, 1000);
+
+</script>
