@@ -790,7 +790,15 @@ $grey: #999;
 .footer a:hover {
      color: #41c365;
 }
+.mytitle {
+     width: 100%;
+     text-align: center;
+     font-size: 1.2em;
+ }
 
+ .mytitle table tr {
+     text-align: center
+ }
 
 /** end footer **/
 
